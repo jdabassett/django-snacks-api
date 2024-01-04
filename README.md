@@ -24,6 +24,28 @@ Destroying test database for alias 'default'...
 
 ## Usage:
 
+Open application in a docker container.
+
+```bash
+(.venv) ➜  django-snacks-api git:(dev) docker compose up
+[+] Building 51.4s (12/12) FINISHED                                                                                              docker:desktop-linux
+#...
+ ✔ Network django-snacks-api_default  Created                                                                                                    0.0s
+ ✔ Container django-snacks-api-web-1  Created                                                                                                    0.0s
+Attaching to django-snacks-api-web-1
+django-snacks-api-web-1  | Watching for file changes with StatReloader
+django-snacks-api-web-1  | Performing system checks...
+django-snacks-api-web-1  |
+django-snacks-api-web-1  |
+django-snacks-api-web-1  | System check identified no issues (0 silenced).
+django-snacks-api-web-1  | January 04, 2024 - 05:15:45
+django-snacks-api-web-1  | Django version 5.0.1, using settings 'project.settings'
+django-snacks-api-web-1  | Starting development server at http://0.0.0.0:8000/
+django-snacks-api-web-1  | Quit the server with CONTROL-C.
+```
+
+Run locally in virtual environment.
+
 ```bash
 (.venv) ➜  django-snacks-api git:(dev) ✗ python manage.py runserver
 Watching for file changes with StatReloader
